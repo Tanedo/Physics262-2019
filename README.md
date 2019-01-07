@@ -16,6 +16,21 @@ We meet Mondays, Wednesdays and every other Friday at 4:15 - 5:30pm.
 
 Graduate-level introduction to the representation of continuous (Lie) groups and how they appear in quantum mechanical systems. How are continuous symmetries manifested mathematically in our physical theories? What patterns of spontaneous symmetry breaking are allowed? How do representations combine? Examples will draw from particle and nuclear physics, but the course will focus on the mathematical formalism relevant to many theoretical disciplines. (Strongly recommended to hep-ex/ph students and cond-mat theory students.)
 
+
+### Course References
+
+For our goals, I am not aware of any single textbook that introduces the topic at a pace and level appropriate for our class. I suggest using a combination of the following references. The lectures are meant to be connective tissue that gives an overarching narrative for what we are doing and why.  
+
+* Georgi, *Lie Algebras in Particle Physics*. This is our official textbook, it has almost everything we'll need (and then some) but not necessarily in the order that makes the most sense for us. It is convenient because it contains derivations of the main results.
+
+* Cahn, *Semi-Simple Lie Algebras and their Representations*. This is a bit more terse and goes beyond the scope of the course. It is available [free from the author](http://phyweb.lbl.gov/~rncahn/www/liealgebras/texall.pdf).
+
+* Zee, *Group Theory in a Nutshell for Physicists*. This is one of my favorite books for its conversational and pedagogical tone. We'll basically be jumping into the second half of the book, which is a bit hefty.
+
+* Gutowski, [lecture notes](http://personal.maths.surrey.ac.uk/st/jg0033/Resources/lectnotes(master).pdf) from *Part III: Symmetry and Particle Physics*. Introduces the geometry of Lie groups in careful detail. We will use this as a primary reference for tensor products.
+
+Other books I have used in the past are those by: Lipkin, Wu-Ki Tung, Jones.
+
 ### Evaluation
 3 problem sets (60%)  
 
