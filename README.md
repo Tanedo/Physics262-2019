@@ -24,7 +24,7 @@ Graduate-level introduction to the representation of continuous (Lie) groups and
 ### Pre-requisites
 Familiarity with linear algebra at the level of Physics 221 (Quantum Mechanics). No background (or primary interest) in particle physics, field theory, or abstract algebra necessary. 
 
-## About PHYS 262
+### About PHYS 262
 
 Physics 262 is a graduate-level special topics course in high-energy physics. Topics change by year and instructor. The course may be taken multiple times for credit. ***Please register for this class***, by registering, you are encouraging the department and the college to offer more of these special topics courses in the future.
 
