@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+## Group Theory for Physicists
 
-You can use the [editor on GitHub](https://github.com/Tanedo/Physics262-2019/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[Syllabus[(https://github.com/Tanedo/Physics262-2019/blob/master/Syllabus%20P262_%20Group%20Theory.pdf)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## About PHYS 262
 
-### Markdown
+Physics 262 is a graduate-level special topics course in high-energy physics. Topics change by year and instructor. The course may be taken multiple times for credit.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### Course Description
 
-- Bulleted
-- List
+Graduate-level introduction to the representation of continuous (Lie) groups and how they appear in quantum mechanical systems. How are continuous symmetries manifested mathematically in our physical theories? What patterns of spontaneous symmetry breaking are allowed? How do representations combine? Examples will draw from particle and nuclear physics, but the course will focus on the mathematical formalism relevant to many theoretical disciplines. (Strongly recommended to hep-ex/ph students and cond-mat theory students.)
 
-1. Numbered
-2. List
+### Evaluation
+3 problem sets (60%)  
 
-**Bold** and _Italic_ and `Code` text
+1 in-class presentation and essay on an application of group theory in your field (20% + 20%)  
 
-[Link](url) and ![Image](src)
-```
+### Pre-requisites
+Familiarity with linear algebra at the level of Physics 221 (Quantum Mechanics). No background (or primary interest) in particle physics, field theory, or abstract algebra necessary. 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Tentative course plan
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Tanedo/Physics262-2019/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+We'll see how things actually pan out as the course goes along.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Week 1: (iso)spin in quantum mechanics, groups and algebras (chapter 3)
+Week 2: fundamental, anti-fundamental, adjoint: what is a representation (chapter 1-2)
+Week 3: roots and weights (chapter 6)
+Week 4: generalization to SU(3) (chapter 7)
+Week 5: simple roots (chapter 8 - 9)
+Week 6: tensor and irreducible representations, Clebsch-Gordan coefficients (chapter 10)
+Week 7: Dynkin diagrams  (chapter 6)
+Week 8: spontaneous symmetry breaking in physics
+Week 9: presentations
+Week 10: advanced topics: the Poincare group and fermions
