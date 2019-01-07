@@ -1,10 +1,7 @@
 ## Group Theory for Physicists
 
-[Syllabus[(https://github.com/Tanedo/Physics262-2019/blob/master/Syllabus%20P262_%20Group%20Theory.pdf)
+[Syllabus](https://github.com/Tanedo/Physics262-2019/blob/master/Syllabus%20P262_%20Group%20Theory.pdf)
 
-## About PHYS 262
-
-Physics 262 is a graduate-level special topics course in high-energy physics. Topics change by year and instructor. The course may be taken multiple times for credit.
 
 
 
@@ -19,6 +16,11 @@ Graduate-level introduction to the representation of continuous (Lie) groups and
 
 ### Pre-requisites
 Familiarity with linear algebra at the level of Physics 221 (Quantum Mechanics). No background (or primary interest) in particle physics, field theory, or abstract algebra necessary. 
+
+## About PHYS 262
+
+Physics 262 is a graduate-level special topics course in high-energy physics. Topics change by year and instructor. The course may be taken multiple times for credit. ***Please register for this class***, by registering, you are encouraging the department and the college to offer more of these special topics courses in the future.
+
 
 
 ### Tentative course plan
