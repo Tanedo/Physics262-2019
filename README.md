@@ -34,13 +34,13 @@ Physics 262 is a graduate-level special topics course in high-energy physics. To
 
 We'll see how things actually pan out as the course goes along.
 
-Week 1: (iso)spin in quantum mechanics, groups and algebras (chapter 3)
-Week 2: fundamental, anti-fundamental, adjoint: what is a representation (chapter 1-2)
-Week 3: roots and weights (chapter 6)
-Week 4: generalization to SU(3) (chapter 7)
-Week 5: simple roots (chapter 8 - 9)
-Week 6: tensor and irreducible representations, Clebsch-Gordan coefficients (chapter 10)
-Week 7: Dynkin diagrams  (chapter 6)
-Week 8: spontaneous symmetry breaking in physics
-Week 9: presentations
-Week 10: advanced topics: the Poincare group and fermions
+Week 1: (iso)spin in quantum mechanics, groups and algebras (chapter 3)  
+Week 2: fundamental, anti-fundamental, adjoint: what is a representation (chapter 1-2)  
+Week 3: roots and weights (chapter 6)  
+Week 4: generalization to SU(3) (chapter 7)  
+Week 5: simple roots (chapter 8 - 9)  
+Week 6: tensor and irreducible representations, Clebsch-Gordan coefficients (chapter 10)  
+Week 7: Dynkin diagrams  (chapter 6)  
+Week 8: spontaneous symmetry breaking in physics  
+Week 9: presentations  
+Week 10: advanced topics: the Poincare group and fermions  
