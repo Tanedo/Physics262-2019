@@ -18,7 +18,8 @@ Graduate-level introduction to the representation of continuous (Lie) groups and
 
 ### Lectures
 
-* [Lec 1](https://github.com/Tanedo/Physics262-2019): Introduction: rotations.
+* [Lec 1](https://github.com/Tanedo/Physics262-2019/blob/master/Lec01.pdf): Introduction: rotations.
+* [Lec 2](https://github.com/Tanedo/Physics262-2019/blob/master/Lec02.pdf): Review of SU(2) ([corrected SU(2) notes](https://github.com/Tanedo/Physics262-2019/blob/master/SU(2).pdf))
 
 
 ### Course References
