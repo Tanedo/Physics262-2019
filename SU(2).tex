@@ -1,0 +1,434 @@
+%% LaTeX Paper Template, Flip Tanedo (flip.tanedo@ucr.edu)
+%% last updated: September 2018
+
+\documentclass[12pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  COMMON PACKAGES  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}	
+%\usepackage{amsthm}				
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  UNUSUAL PACKAGES        %%%%
+%%%  Uncomment as necessary. %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% MATH AND PHYSICS SYMBOLS
+%% ------------------------
+%\usepackage{slashed}       % \slashed{k}
+%\usepackage{mathrsfs}      % Weinberg-esque
+%\usepackage{youngtab}	    % Young Tableaux
+%\usepackage{pifont}        % check marks
+%\usepackage{bbm}           % chalkboard bold
+%\usepackage[normalem]{ulem} % for \sout
+%\usepackage{cancel}
+
+%% CONTENT FORMAT AND DESIGN
+%% -------------------------
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fancyhdr}		% preprint number
+\usepackage{lipsum}         % block of text
+\usepackage{framed}			% boxed remarks
+%\usepackage{subcaption}    % subfig depreciated
+%\usepackage{paralist}      % compactitem
+%\usepackage{appendix}      % subappendices
+%\usepackage{cite}          % group cites 
+%\usepackage{tocloft}       % Table of Contents	
+%\usepackage{xspace}		% macro spacing
+%\usepackage{adjustbox}		% For images in equations tex.stackexchange/270830
+
+
+%\usepackage{listings}      % for code, eg.
+%
+% \begin{lstlisting} 
+%	\lstset{
+%		basicstyle=\ttfamily\footnotesize,
+%		breaklines=true,
+%		backgroundcolor=\color{gray!15!white}}
+
+
+%% TABLES IN LaTeX
+%% ---------------
+\usepackage{booktabs}		% professional
+\usepackage{nicefrac}		% fractions
+%\usepackage{multirow}     
+%\usepackage{arydshln}		% dashed lines
+
+
+%% Other Packages and Notes
+%% ------------------------
+\usepackage[font=small]{caption} 
+\usepackage{float}         % strict [H]
+
+
+%% CUSTOM PACKAGES
+%% ---------------
+%\usepackage{tikzfeynman}   % Flip's rules Feynman Diagrams
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  DOCUMENT PROPERTIES  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[margin=2cm]{geometry}   
+\graphicspath{{figures/}}			
+\numberwithin{equation}{section}    
+
+%% References in two columns, smaller
+\usepackage{multicol}
+\usepackage{etoolbox}
+\usepackage{relsize}
+\patchcmd{\thebibliography}
+  {\list}
+  {\begin{multicols}{2}\smaller\list}
+  {}
+  {}
+\appto{\endthebibliography}{\end{multicols}}
+%% Alternative (one column, modify spacing):
+%% https://wiki.math.cmu.edu/iki/wiki/tips/20140712-bibtex-spacing.html
+
+% Change list spacing
+% from: http://en.wikibooks.org/wiki/LaTeX/List_Structures#Line_spacing
+\let\oldenumerate\enumerate
+\renewcommand{\enumerate}{
+  \oldenumerate
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+  \olditemize
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  (RE)NEW COMMANDS  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% FOR `NOT SHOUTING' CAPS (e.g. acronyms)
+%% ---------------------------------------
+\newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}    
+
+%% COMMON PHYSICS MACROS
+%% ---------------------
+\renewcommand{\tilde}{\widetilde}   % tilde over characters
+\renewcommand{\vec}[1]{\mathbf{#1}} % vectors are boldface
+\newcommand{\dbar}{d\mkern-6mu\mathchar'26}    % for d/2pi
+\newcommand{\ket}[1]{\left|#1\right\rangle}    % <#1|
+\newcommand{\bra}[1]{\left\langle#1\right|}    % |#1>
+\newcommand{\Xmark}{\text{\sffamily X}}        % cross out
+
+%% COMMANDS FOR TEMPORARY COMMENTS
+%% -------------------------------
+\newcommand{\comment}[2]{\textcolor{red}{[\textbf{#1} #2]}}
+\newcommand{\flip}[1]{{
+	\color{green!50!black} \footnotesize [\textbf{\textsf{Flip}}: \textsf{#1}]
+	}}
+
+
+%% COMMANDS FOR TOP-MATTER
+%% -----------------------
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
+\newenvironment{institutions}[1][2em]{\begin{list}{}{\setlength\leftmargin{#1}\setlength\rightmargin{#1}}\item[]}{\end{list}}
+
+
+%% COMMANDS FOR LATEXDIFF
+%% ----------------------
+%% see http://bit.ly/1M74uwc
+\providecommand{\DIFadd}[1]{{\protect\color{blue}#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\protect\scriptsize{#1}}}
+
+%% REMARK: use latexdiff option --allow-spaces
+%% for \frac, ref: http://bit.ly/1iFlujR
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  TIKZ COMMANDS FOR EXTERNAL DIAGRAMS  %%%%
+%%%  requires -shell-escape               %%%%
+%%%  in texpad 1.7: prefs > shell esc sec %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% For exporting tikz figures as into a ./tikz/ subfolder.
+%% It is useful if you want pdf versions of the tikz diagrams or
+%% if you need to speed up compilation of a large document with
+%% many tikz diagrams.
+
+%\write18{} % Careful with this!
+%\usetikzlibrary{external}
+%\tikzexternalize[prefix=tikz/] % folder for external pdfs
+
+
+%%%%%%%%%%%%%%%%%%%
+%%%  HYPERREF  %%%%
+%%%%%%%%%%%%%%%%%%%
+
+%% This package has to be at the end; can lead to conflicts
+
+\usepackage[
+	colorlinks=true,
+	citecolor=green!50!black,
+	linkcolor=NavyBlue!75!black,
+	urlcolor=green!50!black,
+	hypertexnames=false]{hyperref}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  TITLE DATA  %%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+%% PREPRINT NUMBER USING fancyhdr
+%% Must set \thispagestyle{firststyle}
+%% ----------------------------------------------
+\renewcommand{\headrulewidth}{0pt} 	% no separator
+\setlength{\headheight}{15pt} 		% min to avoid fancyhdr warning
+\fancypagestyle{firststyle}{
+	\rhead{\footnotesize%
+	\texttt{UCR-FLIP-2019-PHYS262-01}%\\
+%	\texttt{UCI-TR-2019-XX}
+	}}
+
+%% TOC overwrites fancyhdr, here's a fix
+%% http://tex.stackexchange.com/questions/167828/difficult-with-fancyhdr-and-table-of-contents
+\usepackage{etoc}
+\renewcommand{\etocaftertitlehook}{\pagestyle{plain}}
+\renewcommand{\etocaftertochook}{\thispagestyle{firststyle}}
+
+
+
+\begin{document}
+
+%\thispagestyle{empty}		% default if no preprint #
+%\thispagestyle{firststyle} % to include preprint
+							% overwritten by etoc
+
+\begin{center}
+
+    {\huge \bf Physics 262: SU(2) Conventions}
+
+    \vskip .7cm
+
+%% SINGLE AUTHOR FORMAT
+%% --------------------
+	\textbf{Flip Tanedo} \\
+	\texttt{\footnotesize \email{flip.tanedo@ucr.edu}}
+
+	\vspace{-.8em}
+    \begin{institutions}[2.25cm]
+    \footnotesize
+    {\it 
+	    Department of Physics \& Astronomy, 
+	    University of  California, Riverside, 
+	    {CA} 92521	    
+	    }    
+    \end{institutions}
+
+
+\end{center}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  ABSTRACT    %%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+\noindent 
+Some conventions for group theory. Corrections and additions welcome. We roughly follow chapter 3.2 of Georgi with slightly different conventions.
+\end{abstract}
+
+
+
+\small
+\setcounter{tocdepth}{2}
+\tableofcontents
+\normalsize
+%\clearpage
+
+\section{Basis of Generators}
+
+The SU(2) algebra is
+\begin{align}
+	[T^a, T^b] = i \varepsilon^{abc} T^c \ .
+\end{align}
+Let us decompose these generators into a pair of raising/lowering operators $T^\pm$ and the diagonal generator, $T^3$. We choose to define the raising/lowering operators as:
+\begin{align}
+	T^\pm = T^1 \pm i T^2 \,
+\end{align}
+note that Georgi's definition differs by a factor of $1/\sqrt{2}$.  These satisfy the commutation relations:
+\begin{align}
+	[T^3, T^\pm] & = \pm T^\pm 
+	\\
+	[T^+, T-] & = 2T^3 \ .
+\end{align}
+
+\section{Weights}
+
+The \textbf{weight}, $m$, of a state is the $T^3$ eigenvalue:
+\begin{align}
+	T^3\ket{m} = m \ket{m} \ .
+\end{align}
+The weight is an index for the different components of the representation. 
+
+\section{Raising/Lowering Weights}
+
+The $T^\pm$ operators increment the weight of a state by $\pm 1$. We can see this by applying $T^3$ to the state $T^\pm\ket{m}$:
+\begin{align}
+	T^3 T^\pm \ket{m} &= \left([T^3, T^\pm] + T^\pm T^3 \right) \ket{m} 
+	= \left( m \pm 1 \right) T^\pm \ket{m} \ .
+\end{align}
+The result is that acting on a state with $T^\pm$ moves you to a new 
+
+\section{Finite Dimensional Representations}
+
+Let us examine representations of SU(2) that have a finite number of weights---that is, a finite number of components. The $T^\pm$ operators mean that given a state with some state $\ket{m}$, you can ``rotate'' to a different state $\ket{m\pm 1}$. We are interested in finite dimensional representations---objects with only a finite number of components (weights) that rotate into each other. Thus this ladder must truncate for some maximum and minimum weights. 
+%
+Let $j$ be the \textbf{maximum weight} of the representation:
+\begin{align}
+	T^+\ket{j} &= 0 \ .
+\end{align}
+Let us sequentially derive the states of the representation by applying the lowering operator. What we want to find is the value of the \emph{minimum weight} so that we will know that we have found all of the states.
+
+We can assume that $\ket{j}$ is normalized. However, we have no guarantee that $T^-\ket{j}$ is normalized. Thus let us define a normalization
+\begin{align}
+	T^- \ket{j} &= N_j \ket{j-1} \ ,
+\end{align}
+where $\ket{j-1}$ is normalized. Let's look at this first state below the maximum weight state.
+
+\subsection{Normalization of $\ket{j-1}$}
+
+We determine the normalization $N_j$ by calculating the norm $|| T^-\ket{j}||$:
+\begin{align}
+	\bra{j} \left(T^-\right)^\dag T^- \ket{j} 
+	& = \bra{j} T^+ T^- \ket{j} \\
+	& = \bra{j} \left( [T^+, T^-] + T^-T^+ \right) \ket{j} \\
+	& = \bra{j} 2T^3 \ket{j} \\
+	& = 2j \ .
+\end{align}
+We have used $T^+\ket{j} = 0$. Using the definition of the normalized state $|j-1\rangle$, this must equal:
+\begin{align}
+	2j & = |N_j|^2 \langle j -1 | j+1 \rangle \ ,
+\end{align}
+so that we have found the normalization
+\begin{align}
+	N_ j = \sqrt{2j} \ .
+\end{align}
+
+Next we should check the normalization of the $T^+\ket{j-1}$. To do this, we use the one strategy available: \emph{use the commutation relations to simplify the expression}. Use the facts that
+\begin{enumerate}
+	\item $T^+$ annihilates $\ket{j}$
+	\item $T^3\ket{m} = m$.
+\end{enumerate}
+Thus the raising of $\ket{j-1}$ gives:
+\begin{align}
+	T^+ \ket{j-1} &= T^+ \left( \frac{1}{N_j} T^- \ket{j} \right) \\
+	& = \frac{1}{N_j}\left( [T^+,T^-] + T^-T^+ \right) \ket{j} \\
+	& = \frac{2j}{N_j} \ket{j} \\
+	& = N_j \ket{j} \ .
+\end{align}
+In the last line we explicitly use $N_j = \sqrt{2j}$. We observe that raising $\ket{j-1}$ and lowering $\ket{j}$ produce the same normalization:
+\begin{align}
+	T^- \ket{j} &= N_j \ket{j-1}\\
+	T^+ \ket{j-1} &= N_j \ket{j} \ .
+\end{align}
+
+\subsection{Recursion relation}
+
+Now suppose that for some general weight $\ket{m}$ in our representation, we know that:
+\begin{align}
+	T^- \ket{m+1} &= N_{m+1} \ket{m} \\
+	T^+ \ket{m} &= N_{m+1} \ket{m+1} \ ,
+\end{align}
+where $N_{m+1}$ is known and the states $\ket{m}$, $\ket{m+1}$ are normalized. This is the case with the `top of the ladder,' $(m+1) = 1$. We now derive $N_m$ and show that the same relation holds for $m\to (m-1)$. $N_m$ is defined by
+\begin{align}
+	T^- \ket{m} = N_m \ket{m-1} \ .
+\end{align}
+$N_m$ is fixed by requiring that $\ket{m-1}$ is normalized, $\langle m-1 | m-1\rangle = 1$. Then we have:
+\begin{align}
+	N_m^2  &= \bra{m} T^+ T^- \ket{m} \\
+	&= \bra{m} \left( [T^+,T^-] + T^-T^+ \right) \ket{m}\\
+	&= 2m +  N_{m+1}^2 \ . \label{eq:Nm:recursion}
+\end{align}
+We thus have a recursion relation for $N_m$ in terms of $N_{m+1}$.
+
+To complete the recursion, we must prove that
+\begin{align}
+	T^+ \ket{m-1} & = N_m \ket{m} \ .
+\end{align}
+The left-hand side is
+\begin{align}
+	T^+ \ket{m-1} &= T^+ \left(\frac{1}{N_m} T^- \ket{m}\right)\\
+	& = \frac{1}{N_m} \left( [T+,T-] + T^-T^+ \right) \ket{m} \\
+	& = \frac{1}{N_m} \left( 2m \ket{m} + N_{m+1}T^- \ket{m+1} \right) \\
+	& = \frac{1}{N_m} \left( 2m \ket{m} + N_{m+1}^2 \ket{m} \right) \\
+	& = N_m \ket{m} \ ,
+\end{align}
+where we have used the explicit result, (\ref{eq:Nm:recursion}). 
+
+\subsection{Closed expression for the normalization}
+
+We can imagine writing down the relations for the squared normalizations:
+\begin{align}
+	\begin{array}{ccccc}
+	N_j^2 & & &=& 2j \\	
+	N_{j-1}^2 & -  & N_j^2 &=& 2(j-1) \\
+	N_{j-2}^2 & -  & N_{j-1}^2 &=& 2(j-2) \\
+	\vdots & & & & \vdots \\
+	N_{j-k}^2 & -  & N_{j-k-1}^2 &=& 2(j-k) \\
+	\end{array}
+\end{align}
+Sum both sides of the equations and recognizing that there are $(k+1)$ terms,
+\begin{align}
+	N_{j-k}^2 &= 2(k-1)j -  2\frac{k(k+1)}2\\
+	& = (k+1)(2j - k) \ .
+\end{align}
+Rather than using ``$k$ steps below the highest weight, '' it is more tidy to use the normalization of the $m^\text{th}$ rung of the ladder via $k = j-m$:
+\begin{align}
+	N_m = \sqrt{(j-m+1)(j+m)} \ .
+\end{align}
+
+\section{Bottom of the ladder}
+
+In order for the representation to be finite, we need the ladder to truncate at the bottom. There is thus some a limit to the number of times you can hit the highest weight state $\ket{j}$ with $T^-$ before it annihilates. Let this number be $\ell$. Then we want to use
+\begin{align}
+	T^- \ket{j-\ell} &= 0
+\end{align}
+with the normalization $N_{j-\ell}$ to determine what this $\ell$ is. 
+\begin{align}
+	N_{j-\ell} = \sqrt{(\ell+1)(2j - \ell)} \ .
+\end{align}
+Observe that $(\ell+1) >0$ since $\ell$ is a positive natural number. Then the requirement that the ladder terminates, $N_{j-\ell} = 0$, requires 
+\begin{align}
+	\ell = 2j \ .
+\end{align}
+From this we observe:
+\begin{enumerate}
+	\item The highest weight $m_\text{max} = j$ is half integer. It can be written as $\ell/2$ for some positive integer $\ell$. 
+	\item The lowest weight is simply $m_\text{min} = -j$. 
+\end{enumerate}
+
+
+
+
+%% Appendices
+% \appendix
+
+
+%% Bibliography
+\bibliographystyle{utcaps} 	% arXiv hyperlinks
+% \bibliography{bib title without .bib}
+
+
+\end{document}
