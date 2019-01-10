@@ -1,7 +1,8 @@
 ## Group Theory for Physicists
 
 [Syllabus](https://github.com/Tanedo/Physics262-2019/blob/master/Syllabus%20P262_%20Group%20Theory.pdf)  
-[Course calendar](https://calendar.google.com/calendar?cid=dWNyLmVkdV9obHVwZTVyczRxdDE2bHZhcGw0N2hjanBwNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
+[Course calendar](https://calendar.google.com/calendar?cid=dWNyLmVkdV9obHVwZTVyczRxdDE2bHZhcGw0N2hjanBwNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)  
+[Webpage](https://tanedo.github.io/Physics262-2019/)
 
 We meet Mondays, Wednesdays and every other Friday at 4:15 - 5:30pm (see schedule) in the Physics Conference Room.
 
