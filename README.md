@@ -21,6 +21,7 @@ Graduate-level introduction to the representation of continuous (Lie) groups and
 
 * [Lec 1](https://github.com/Tanedo/Physics262-2019/blob/master/Lec01.pdf): Introduction: rotations.
 * [Lec 2](https://github.com/Tanedo/Physics262-2019/blob/master/Lec02.pdf): Review of SU(2) ([corrected SU(2) notes](https://github.com/Tanedo/Physics262-2019/blob/master/SU(2).pdf))
+* [Lec 3](https://github.com/Tanedo/Physics262-2019/blob/master/Lec03.pdf): SU(2) representations, the adjoint representation, introduction to SU(3). See: Cahn chapter 1-2, Gutowski, Georgi chapter 3.  
 
 
 ### Course References
