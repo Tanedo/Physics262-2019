@@ -1,0 +1,288 @@
+\documentclass[12pt]{article}
+%% arXiv paper template by Flip Tanedo
+%% last updated: Dec 2016
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  THE USUAL PACKAGES  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{nopageno}
+\usepackage{enumerate}
+\usepackage{parskip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  UNUSUAL PACKAGES        %%%%
+%%%  Uncomment as necessary. %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% MATH AND PHYSICS SYMBOLS
+%% ------------------------
+%\usepackage{slashed}       % \slashed{k}
+%\usepackage{mathrsfs}      % Weinberg-esque letters
+%\usepackage{youngtab}	    % Young Tableaux
+%\usepackage{pifont}        % check marks
+\usepackage{bbm}           % \mathbbm{1} incomp. w/ XeLaTeX
+%\usepackage[normalem]{ulem} % for \sout
+
+
+%% CONTENT FORMAT AND DESIGN (below for general formatting)
+%% --------------------------------------------------------
+\usepackage{lipsum}        % block of text (formatting test)
+%\usepackage{color}         % \color{...}, colored text
+%\usepackage{framed}        % boxed remarks
+%\usepackage{subcaption}    % subfigures; subfig depreciated
+%\usepackage{paralist}      % compactitem
+%\usepackage{appendix}      % subappendices
+%\usepackage{cite}          % group cites (conflict: collref)
+%\usepackage{tocloft}       % Table of Contents
+
+%% TABLES IN LaTeX
+%% ---------------
+%\usepackage{booktabs}      % professional tables
+%\usepackage{nicefrac}      % fractions in tables,
+%\usepackage{multirow}      % multirow elements in a table
+%\usepackage{arydshln} 	    % dashed lines in arrays
+
+%% Other Packages and Notes
+%% ------------------------
+%\usepackage[font=small]{caption} % caption font is small
+
+
+
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  PAGE FORMATTING and (RE)NEW COMMANDS  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[margin=2cm]{geometry}   % reasonable margins
+
+\graphicspath{{figures/}}	        % set directory for figures
+
+% for capitalized things
+\newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}
+
+\numberwithin{equation}{subsection}    % set equation numbering
+\renewcommand{\tilde}{\widetilde}   % tilde over characters
+\renewcommand{\vec}[1]{\mathbf{#1}} % vectors are boldface
+
+\newcommand{\dbar}{d\mkern-6mu\mathchar'26}    % for d/2pi
+\newcommand{\ket}[1]{\left|#1\right\rangle}    % <#1|
+\newcommand{\bra}[1]{\left\langle#1\right|}    % |#1>
+\newcommand{\Xmark}{\text{\sffamily X}}        % cross out
+
+
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+  \olditemize
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+
+
+% Commands for temporary comments
+\newcommand{\comment}[2]{\textcolor{red}{[\textbf{#1} #2]}}
+\newcommand{\flip}[1]{{\color{red} [\textbf{Flip}: {#1}]}}
+\newcommand{\email}[1]{\texttt{\href{mailto:#1}{#1}}}
+
+\newenvironment{institutions}[1][2em]{\begin{list}{}{\setlength\leftmargin{#1}\setlength\rightmargin{#1}}\item[]}{\end{list}}
+
+
+\usepackage{fancyhdr}		% to put preprint number
+
+
+
+%%%%%%%%%%%%%%%%%%%
+%%%  HYPERREF  %%%%
+%%%%%%%%%%%%%%%%%%%
+
+%% This package has to be at the end; can lead to conflicts
+\usepackage{microtype}
+\usepackage[
+	colorlinks=true,
+	citecolor=black,
+	linkcolor=black,
+	urlcolor=green!50!black,
+	hypertexnames=false]{hyperref}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  TITLE DATA  %%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\begin{center}
+
+    {\Large \textsc{Homework 1:}
+    \textbf{Representations of SU(2) and SU(3)}}
+
+\end{center}
+
+\vskip .4cm
+
+\noindent
+\begin{tabular*}{\textwidth}{rlcrll}
+	\textsc{Course:}& Physics 262, \emph{Group Theory for Physicists} (Fall 2019)
+	&
+%	\hspace{1.2cm}
+	&
+	\\
+	\textsc{Instructor:}& Professor Flip Tanedo (\email{flip.tanedo@ucr.edu})
+	&
+	%\hfill
+	&
+	&
+	\\
+	\textsc{Due by:}& Be ready to discuss on Friday, Feb 8
+	&
+	%\hfill
+	&
+	%
+\end{tabular*}
+
+
+
+\subsection{The spin-1 representation of SU(2)}
+%
+
+The spin-1 representation of SU(2) is the three dimensional representation with highest weight $j=1$ and states $\ket{1}$, $\ket{0}$, and $\ket{-1}$. A vector in this space is:
+\begin{align}
+  \begin{pmatrix}
+    a \\ b \\ c
+  \end{pmatrix}
+  &=
+  a \ket{1} + b \ket{0} + c\ket{-1} \ .
+\end{align}
+
+\subsubsection{Normalizations}
+
+We chose a normalization of our states so that:
+\begin{align}
+  T^- \ket{m} & = N_m \ket{m-1} \\
+  T^+ \ket{m-1} & = N_m \ket{m} \ ,
+\end{align}
+where $\ket{n}$ is orthonormal. Write out $N_m$ for each of the weights $m=\pm 1, 0$.
+
+
+\subsubsection{Raising, lowering, Cartan}
+
+Write out the explicit form of the generators in this representation: $d(T^+)$, $d(T^-)$, $d(T^3)$.
+
+\subsubsection{Generators in the `usual' basis}
+
+Write out the explicit form of the generators in this representation: $d(T^1)$, $d(T^2)$, $d(T^3)$. Recall that:
+\begin{align}
+  d(T^\pm) &= d(T^1) \pm i d(T^2) \ .
+\end{align}
+
+\subsection{The adjoint representation of SU(2)}
+
+The \textbf{adjoint} representation is one where the generators themselves are states. The action of a generator (as a matrix) on a generator (as a state) is given by the \textbf{structure constant}, $f^{abc}$. Recall that the structure constant is defined by
+\begin{align}
+  [T^a, T^b] &= i f^{abc}T^c \ .
+\end{align}
+For SU(2) $f^{abc} = \varepsilon^{abc}$, the totally antisymmetric tensor with $\varepsilon{123} = 1$. The matrices of the adjoint representation are:
+\begin{align}
+  \text{ad}(T^a)^{bc} = f^{abc} \ .
+\end{align}
+In other words, the action of a generator in the adjoint representation $\text{ad}(T^a)$ on a state $\ket{T^b}$ is
+\begin{align}
+  \text{ad}(T^a)\ket{T^b} = f^{abc}\ket{T^c} = \ket{-i[T^a,T^b]} \ .
+\end{align}
+
+\subsubsection{Dimension of the adjoint representation}
+
+What is the dimension of the adjoint representation? (How many basis states are there?) \textsc{Answer}: three. (You may want to write one sentence explaining why the answer is three. If the answer is more than one sentence, then it's probably wrong.)
+
+
+\subsubsection{Dimension of the adjoint representation}
+Write out the explicit matrix form of $\text{ad}(T^3)$ and confirm that it matches $d(T^3)$ in the spin-1 representation. Write out the explicit matrix forms of $ad(T^1)$ and $\text{ad}(T^2)$. Observe that this is \emph{not} quite the same as $d(T^1)$ and $d(T^2)$ of the spin-1 repesentation.
+
+\subsubsection{What gives?}
+
+Confirm that $\text{ad}(T^1)$, $\text{ad}(T^2)$, and $\text{ad}(T^3)$ satisfy the SU(2) commutation relations: $$[\text{ad}(T^a), \text{ad}(T^b)] = \varepsilon^{abc}\text{ad}(T^c) \ .$$
+Confirm that if some set of matrices $d(T)$ are a representation---that is, they satisfy the algebra's commutation relations---then another set of matrices that differ by a unitary transformation, $\tilde d(T) \equiv U d(T) U^\dag$, is also a representation. Write down the matrix $U$ that transforms the spin-1 representation into the adjoint representation. This proves that the spin-1 and adjoint representations are, in fact, the same. The difference between them is purely ``cosmetic.'' Hint: \url{https://physics.stackexchange.com/q/279880/166736}. The difference has to do with the spherical basis of rotations.
+
+\subsection{SU(3) with different Cartan bases}
+
+\subsubsection{A weird basis}
+
+Suppose we chose a weird basis for the Cartan subalgebra of SU(3):
+\begin{align}
+  H_1 &= \frac{1}{2}\text{diag}(0, 1, -1)
+  &
+  H_2 &= \frac{1}{2\sqrt{3}}\text{diag}(-2, 1, 1) \ .
+\end{align}
+These generators have ```quantum numbers'' $(r,s)$:
+\begin{align}
+  H_1 \ket{r,s} &= r \ket{r,s} &
+  H_2 \ket{r,s} &= s \ket{r,s}  \ .
+\end{align}
+For each set of raising and lowering operators, $X^\pm$, work out $[X^+, X^-]$, $[H_1,X^\pm]$, and $[H_2,X^\pm]$. Using what we know about SU(2), identify the conditions on $(r,s)_\text{max}$, the ``highest weight'' of the representation. Draw the weight diagram for the \textbf{fundamental representation} in $(r,s)$ weight space. How is this relsssssated to the $(p,q)$ weight space we introduced in Lecture 4?
+
+\subsubsection{A stupid basis}
+
+Here's a stupid basis for the Cartan subalgebra of SU(3). It's close to the basis we used in class, but improperly normalized.
+\begin{align}
+  H_1 &= \frac{1}{2}\text{diag}(1, -1,)
+  &
+  H_2 &= \frac{1}{2}\text{diag}(1, 1, -2) \ .
+\end{align}
+What are the consequences on the weight diagram? Draw the \emph{correct} weight diagram for the fundamental representation (what we did in class) and overlay it with the \emph{stupid} weight diagram from this improperly normalized set of Cartan generators.
+
+\subsubsection{Another stupid basis}
+
+Here's another stupid basis for the Cartan subalgebra of SU(3).
+\begin{align}
+  H_1 &= \frac{1}{2}\text{diag}(1,-1, 0)
+  &
+  H_2 &= \frac{1}{2\sqrt{3}}\text{diag}(-2, 1, 1) \ .
+\end{align}
+What's goes wrong with this basis? \textsc{Hint}: notice that these generators are not `orthogonal' with respect to the Killing form, $\kappa(T^a, T^b) = \text{Tr}(T^aT^b)$. That is: $\kappa(H_1, H_2) \neq 0$. What implications does this have when drawing the weight diagram?
+
+
+\subsection{Properties of Algebras}
+
+Show that:
+\begin{itemize}
+  \item If a matrix Lie group is defined to be \textbf{special} (unit determinant), then the algebra is made up of traceless matrices.
+  \item If a matrix Lie group is defined to be \textbf{unitary}, then the algebra is made up of Hermitian matrices.
+\end{itemize}
+
+\subsection{Adjoint representation of a group, algebra}
+
+Let $G$ be a matrix Lie group. Let $T$ be an element of its associated algebra. That is: we can write $g = \exp{-i\theta^a T^a}$ for some $g\in G$ sufficiently close to the origin. The adjoint representation of the \emph{group} is the action of $G$ on elements of its algebra:
+\begin{align}
+  \text{Ad}(g) \ket{X} = g X g^{-1} \ ,
+\end{align}
+where $X = \theta^a T^a$ is an element of the algebra.
+Show that if $g = \exp{-i\epsilon^a T^a}$ for small angles $\epsilon^a$, the adjoint action of the \emph{group} reduces to the adjoint action of the \emph{algebra}:
+\begin{align}
+  Ad(g) \ket{X} = \left(1 + c^a \text{ad}(T^a) + \mathcal O(\epsilon^2) \right) X \ .
+\end{align}
+Determine what $c^a$ is.
+%
+\textsc{Hint}: See Gutowski sections 2.14 - 2.26.
+
+\section*{Extra Credit}
+
+These problems are for your own edification. You are encouraged to explore them according to your own personal and research interests. \textbf{Relevant}: \url{https://youtu.be/0obMRztklqU}.
+
+
+\subsection*{BCH}
+
+Derive the Baker-Campbell-Hausdorff formula. Start by looking up what the Baker-Campbell-Hausdorff formula is. I don't have anything deep to say about this, but going through the derivation once gives you a feel for how to think of the group and algebra as a manifold and tangent space.
+
+
+\end{document}
