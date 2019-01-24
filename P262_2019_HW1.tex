@@ -132,22 +132,15 @@
 \vskip .4cm
 
 \noindent
-\begin{tabular*}{\textwidth}{rlcrll}
+\begin{tabular*}{\textwidth}{rl}
 	\textsc{Course:}& Physics 262, \emph{Group Theory for Physicists} (Fall 2019)
-	&
-%	\hspace{1.2cm}
-	&
 	\\
 	\textsc{Instructor:}& Professor Flip Tanedo (\email{flip.tanedo@ucr.edu})
-	&
-	%\hfill
-	&
-	&
 	\\
 	\textsc{Due by:}& Be ready to discuss on Friday, Feb 8
-	&
-	%\hfill
-	&
+	\\
+	\textsc{Updated:}& Jan 24, 11:30am
+
 	%
 \end{tabular*}
 
@@ -188,18 +181,22 @@ Write out the explicit form of the generators in this representation: $d(T^1)$, 
 
 \subsection{The adjoint representation of SU(2)}
 
+\flip{Updated 1/24: typo on $\varepsilon^{123}$, $(-i)$ on $\text{ad}(T^a)^{bc} = -if^{abc}$. Version below is corrected.}
+
 The \textbf{adjoint} representation is one where the generators themselves are states. The action of a generator (as a matrix) on a generator (as a state) is given by the \textbf{structure constant}, $f^{abc}$. Recall that the structure constant is defined by
 \begin{align}
   [T^a, T^b] &= i f^{abc}T^c \ .
 \end{align}
-For SU(2) $f^{abc} = \varepsilon^{abc}$, the totally antisymmetric tensor with $\varepsilon{123} = 1$. The matrices of the adjoint representation are:
+For SU(2) $f^{abc} = \varepsilon^{abc}$, the totally antisymmetric tensor with $\varepsilon^{123} = 1$. The matrices of the adjoint representation are:
 \begin{align}
-  \text{ad}(T^a)^{bc} = f^{abc} \ .
+  \text{ad}(T^a)^{bc} = -i f^{abc} \ .
 \end{align}
 In other words, the action of a generator in the adjoint representation $\text{ad}(T^a)$ on a state $\ket{T^b}$ is
 \begin{align}
-  \text{ad}(T^a)\ket{T^b} = f^{abc}\ket{T^c} = \ket{-i[T^a,T^b]} \ .
+  \text{ad}(T^a)\ket{T^b} = -if^{abc}\ket{T^c} \ .
+   % = -\ket{[T^a,T^b]}
 \end{align}
+\flip{Update: removed irrelevant information.}
 
 \subsubsection{Dimension of the adjoint representation}
 
@@ -207,12 +204,20 @@ What is the dimension of the adjoint representation? (How many basis states are 
 
 
 \subsubsection{Dimension of the adjoint representation}
-Write out the explicit matrix form of $\text{ad}(T^3)$ and confirm that it matches $d(T^3)$ in the spin-1 representation. Write out the explicit matrix forms of $ad(T^1)$ and $\text{ad}(T^2)$. Observe that this is \emph{not} quite the same as $d(T^1)$ and $d(T^2)$ of the spin-1 repesentation.
+
+\flip{Update: clarified the basis. Why is the $\ket{T^\pm}, \ket{T^3}$ basis a useful one to use instead of $\ket{T^{1,2}}, \ket{T^3}$? (Think about the weight of the state.)}.
+
+Write out the explicit matrix form of $\text{ad}(T^3)$ acting on a basis of states $\ket{T^\pm}, \ket{T^3}$. Confirm that it matches $d(T^3)$ in the spin-1 representation acting on states $\ket{m=\pm1}, \ket{m=0}$. Write out the explicit matrix forms of $\text{ad}(T^1)$ and $\text{ad}(T^2)$ acting on the basis $\ket{T^\pm}, \ket{T^3}$. Observe that this is \emph{not} quite the same as $d(T^1)$ and $d(T^2)$ of the spin-1 repesentation.
 
 \subsubsection{What gives?}
 
-Confirm that $\text{ad}(T^1)$, $\text{ad}(T^2)$, and $\text{ad}(T^3)$ satisfy the SU(2) commutation relations: $$[\text{ad}(T^a), \text{ad}(T^b)] = \varepsilon^{abc}\text{ad}(T^c) \ .$$
+Confirm that $\text{ad}(T^1)$, $\text{ad}(T^2)$, and $\text{ad}(T^3)$ satisfy the SU(2) commutation relations:
+\begin{align}
+  [\text{ad}(T^a), \text{ad}(T^b)] = i\varepsilon^{abc}\text{ad}(T^c) \ .
+\end{align}
 Confirm that if some set of matrices $d(T)$ are a representation---that is, they satisfy the algebra's commutation relations---then another set of matrices that differ by a unitary transformation, $\tilde d(T) \equiv U d(T) U^\dag$, is also a representation. Write down the matrix $U$ that transforms the spin-1 representation into the adjoint representation. This proves that the spin-1 and adjoint representations are, in fact, the same. The difference between them is purely ``cosmetic.'' Hint: \url{https://physics.stackexchange.com/q/279880/166736}. The difference has to do with the spherical basis of rotations.
+
+\flip{Remark: the basis $T^\pm$, $T^3$ forms an algebra that has different structure constants than $\varepsilon^{abc}$. That's okay. This basis is useful for building the representations of the group and understanding how they transform, but $T^\pm$ is not a Hermitian matrix.}
 
 % \subsection{SU(3) with different Cartan bases}
 %
@@ -262,16 +267,19 @@ Show that:
 
 \subsection{Adjoint representation of a group, algebra}
 
-Let $G$ be a matrix Lie group. Let $T$ be an element of its associated algebra. That is: we can write $g = \exp{-i\theta^a T^a}$ for some $g\in G$ sufficiently close to the origin. The adjoint representation of the \emph{group} is the action of $G$ on elements of its algebra:
+\flip{Update: Clarification and discussion.} Let $G$ be a matrix Lie group and call the generators $T^a$. We can write elements of $G$ that are ``sufficiently close to the origin'' as $g = \exp(-i\theta^a T^a)$. The adjoint representation of the \emph{group} is the action of $G$ on elements of its algebra:
 \begin{align}
   \text{Ad}(g) \ket{X} = g X g^{-1} \ ,
 \end{align}
-where $X = \theta^a T^a$ is an element of the algebra.
-Show that if $g = \exp{-i\epsilon^a T^a}$ for small angles $\epsilon^a$, the adjoint action of the \emph{group} reduces to the adjoint action of the \emph{algebra}:
+where $X = x^a T^a$ is an element of the algebra.
+Show that if $g = \exp(-i\epsilon^a T^a)$ for small angles $\epsilon^a$, the adjoint action of the \emph{group} reduces to the adjoint action of the \emph{algebra}:
 \begin{align}
   Ad(g) \ket{X} = \left(1 + c^a \text{ad}(T^a) + \mathcal O(\epsilon^2) \right) X \ .
 \end{align}
-Determine what $c^a$ is.
+Determine what $c^a$ is. Observe that the action of $\text{ad}(T^a)$ on $X$ is a commutator:
+\begin{align}
+    \text{ad}(T^a)\ket{T^b} = -if^{abc}\ket{T^c} = -\ket{[T^a,T^b]} \ .
+\end{align}
 %
 \textsc{Hint}: See Gutowski sections 2.14 - 2.26.
 
