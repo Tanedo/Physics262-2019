@@ -17,6 +17,10 @@ We meet Mondays, Wednesdays and every other Friday at 4:15 - 5:30pm (see schedul
 
 Graduate-level introduction to the representation of continuous (Lie) groups and how they appear in quantum mechanical systems. How are continuous symmetries manifested mathematically in our physical theories? What patterns of spontaneous symmetry breaking are allowed? How do representations combine? Examples will draw from particle and nuclear physics, but the course will focus on the mathematical formalism relevant to many theoretical disciplines. (Strongly recommended to hep-ex/ph students and cond-mat theory students.)
 
+### Homework
+
+* [HW1](https://github.com/Tanedo/Physics262-2019/blob/master/P262_2019_HW1.pdf): Reps of SU(2) and SU(3). To be discussed Feb 8. 
+
 ### Lectures
 
 * [Lec 1](https://github.com/Tanedo/Physics262-2019/blob/master/Lec01.pdf): Introduction: rotations.
