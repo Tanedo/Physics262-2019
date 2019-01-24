@@ -214,42 +214,42 @@ Write out the explicit matrix form of $\text{ad}(T^3)$ and confirm that it match
 Confirm that $\text{ad}(T^1)$, $\text{ad}(T^2)$, and $\text{ad}(T^3)$ satisfy the SU(2) commutation relations: $$[\text{ad}(T^a), \text{ad}(T^b)] = \varepsilon^{abc}\text{ad}(T^c) \ .$$
 Confirm that if some set of matrices $d(T)$ are a representation---that is, they satisfy the algebra's commutation relations---then another set of matrices that differ by a unitary transformation, $\tilde d(T) \equiv U d(T) U^\dag$, is also a representation. Write down the matrix $U$ that transforms the spin-1 representation into the adjoint representation. This proves that the spin-1 and adjoint representations are, in fact, the same. The difference between them is purely ``cosmetic.'' Hint: \url{https://physics.stackexchange.com/q/279880/166736}. The difference has to do with the spherical basis of rotations.
 
-\subsection{SU(3) with different Cartan bases}
-
-\subsubsection{A weird basis}
-
-Suppose we chose a weird basis for the Cartan subalgebra of SU(3):
-\begin{align}
-  H_1 &= \frac{1}{2}\text{diag}(0, 1, -1)
-  &
-  H_2 &= \frac{1}{2\sqrt{3}}\text{diag}(-2, 1, 1) \ .
-\end{align}
-These generators have ```quantum numbers'' $(r,s)$:
-\begin{align}
-  H_1 \ket{r,s} &= r \ket{r,s} &
-  H_2 \ket{r,s} &= s \ket{r,s}  \ .
-\end{align}
-For each set of raising and lowering operators, $X^\pm$, work out $[X^+, X^-]$, $[H_1,X^\pm]$, and $[H_2,X^\pm]$. Using what we know about SU(2), identify the conditions on $(r,s)_\text{max}$, the ``highest weight'' of the representation. Draw the weight diagram for the \textbf{fundamental representation} in $(r,s)$ weight space. How is this relsssssated to the $(p,q)$ weight space we introduced in Lecture 4?
-
-\subsubsection{A stupid basis}
-
-Here's a stupid basis for the Cartan subalgebra of SU(3). It's close to the basis we used in class, but improperly normalized.
-\begin{align}
-  H_1 &= \frac{1}{2}\text{diag}(1, -1,)
-  &
-  H_2 &= \frac{1}{2}\text{diag}(1, 1, -2) \ .
-\end{align}
-What are the consequences on the weight diagram? Draw the \emph{correct} weight diagram for the fundamental representation (what we did in class) and overlay it with the \emph{stupid} weight diagram from this improperly normalized set of Cartan generators.
-
-\subsubsection{Another stupid basis}
-
-Here's another stupid basis for the Cartan subalgebra of SU(3).
-\begin{align}
-  H_1 &= \frac{1}{2}\text{diag}(1,-1, 0)
-  &
-  H_2 &= \frac{1}{2\sqrt{3}}\text{diag}(-2, 1, 1) \ .
-\end{align}
-What's goes wrong with this basis? \textsc{Hint}: notice that these generators are not `orthogonal' with respect to the Killing form, $\kappa(T^a, T^b) = \text{Tr}(T^aT^b)$. That is: $\kappa(H_1, H_2) \neq 0$. What implications does this have when drawing the weight diagram?
+% \subsection{SU(3) with different Cartan bases}
+%
+% \subsubsection{A weird basis}
+%
+% Suppose we chose a weird basis for the Cartan subalgebra of SU(3):
+% \begin{align}
+%   H_1 &= \frac{1}{2}\text{diag}(0, 1, -1)
+%   &
+%   H_2 &= \frac{1}{2\sqrt{3}}\text{diag}(-2, 1, 1) \ .
+% \end{align}
+% These generators have ```quantum numbers'' $(r,s)$:
+% \begin{align}
+%   H_1 \ket{r,s} &= r \ket{r,s} &
+%   H_2 \ket{r,s} &= s \ket{r,s}  \ .
+% \end{align}
+% For each set of raising and lowering operators, $X^\pm$, work out $[X^+, X^-]$, $[H_1,X^\pm]$, and $[H_2,X^\pm]$. Using what we know about SU(2), identify the conditions on $(r,s)_\text{max}$, the ``highest weight'' of the representation. Draw the weight diagram for the \textbf{fundamental representation} in $(r,s)$ weight space. How is this relsssssated to the $(p,q)$ weight space we introduced in Lecture 4?
+%
+% \subsubsection{A stupid basis}
+%
+% Here's a stupid basis for the Cartan subalgebra of SU(3). It's close to the basis we used in class, but improperly normalized.
+% \begin{align}
+%   H_1 &= \frac{1}{2}\text{diag}(1, -1,)
+%   &
+%   H_2 &= \frac{1}{2}\text{diag}(1, 1, -2) \ .
+% \end{align}
+% What are the consequences on the weight diagram? Draw the \emph{correct} weight diagram for the fundamental representation (what we did in class) and overlay it with the \emph{stupid} weight diagram from this improperly normalized set of Cartan generators.
+%
+% \subsubsection{Another stupid basis}
+%
+% Here's another stupid basis for the Cartan subalgebra of SU(3).
+% \begin{align}
+%   H_1 &= \frac{1}{2}\text{diag}(1,-1, 0)
+%   &
+%   H_2 &= \frac{1}{2\sqrt{3}}\text{diag}(-2, 1, 1) \ .
+% \end{align}
+% What's goes wrong with this basis? \textsc{Hint}: notice that these generators are not `orthogonal' with respect to the Killing form, $\kappa(T^a, T^b) = \text{Tr}(T^aT^b)$. That is: $\kappa(H_1, H_2) \neq 0$. What implications does this have when drawing the weight diagram?
 
 
 \subsection{Properties of Algebras}
