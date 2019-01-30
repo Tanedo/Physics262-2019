@@ -4,8 +4,7 @@
 [Course calendar](https://calendar.google.com/calendar?cid=dWNyLmVkdV9obHVwZTVyczRxdDE2bHZhcGw0N2hjanBwNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)  
 [Webpage](https://tanedo.github.io/Physics262-2019/)
 
-We meet Mondays, Wednesdays and every other Friday at 4:15 - 5:30pm (see schedule) in the Physics Conference Room.
-
+We meet Mondays, Wednesdays and every other Friday at 4:15 - 5:30pm (see schedule) in the Physics Conference Room. 
 
 <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ucr.edu_hlupe5rs4qt16lvapl47hcjpp4%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="500" height="400" frameborder="0" scrolling="no"></iframe>
 
