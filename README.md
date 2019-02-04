@@ -2,7 +2,8 @@
 
 [Syllabus](https://github.com/Tanedo/Physics262-2019/blob/master/Syllabus%20P262_%20Group%20Theory.pdf)  
 [Course calendar](https://calendar.google.com/calendar?cid=dWNyLmVkdV9obHVwZTVyczRxdDE2bHZhcGw0N2hjanBwNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)  
-[Webpage](https://tanedo.github.io/Physics262-2019/)
+[Webpage](https://tanedo.github.io/Physics262-2019/)  
+[Triangular Graph Paper](https://github.com/Tanedo/Physics262-2019/blob/master/tripaper.pdf) via [Jan Gutowski](http://personal.maths.surrey.ac.uk/st/jg0033/Part-III-Symmetries-and-Particles-Course.html)  
 
 We meet Mondays, Wednesdays and every other Friday at 4:15 - 5:30pm (see schedule) in the Physics Conference Room. 
 
@@ -31,6 +32,7 @@ Graduate-level introduction to the representation of continuous (Lie) groups and
 * [Lec 7](https://github.com/Tanedo/Physics262-2019/blob/master/Lec07.pdf): Hexagonal weight diagrams
 * [Lec 7b](https://github.com/Tanedo/Physics262-2019/blob/master/Lec07_a.pdf) On the adjoint
 * [Lec 8](https://github.com/Tanedo/Physics262-2019/blob/master/Lec08.pdf): Tensor representations
+* [Lec 9](https://github.com/Tanedo/Physics262-2019/blob/master/Lec09.pdf): Indices for SU(N)
 
 
 ### Course References
