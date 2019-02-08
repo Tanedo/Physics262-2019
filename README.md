@@ -34,6 +34,7 @@ Graduate-level introduction to the representation of continuous (Lie) groups and
 * [Lec 8](https://github.com/Tanedo/Physics262-2019/blob/master/Lec08.pdf): Tensor representations
 * [Lec 9](https://github.com/Tanedo/Physics262-2019/blob/master/Lec09.pdf): Indices for SU(N)
 * [Lec 10](https://github.com/Tanedo/Physics262-2019/blob/master/Lec10.pdf): Invariant tensors, roots
+* [Lec 11](https://github.com/Tanedo/Physics262-2019/blob/master/Lec11.pdf): HW1 review, roots for SO(4) and SO(5)
 
 
 ### Course References
