@@ -1,0 +1,231 @@
+\documentclass[12pt]{article}
+%% arXiv paper template by Flip Tanedo
+%% last updated: Dec 2016
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  THE USUAL PACKAGES  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{nopageno}
+\usepackage{enumerate}
+\usepackage{parskip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  UNUSUAL PACKAGES        %%%%
+%%%  Uncomment as necessary. %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% MATH AND PHYSICS SYMBOLS
+%% ------------------------
+%\usepackage{slashed}       % \slashed{k}
+%\usepackage{mathrsfs}      % Weinberg-esque letters
+%\usepackage{youngtab}	    % Young Tableaux
+%\usepackage{pifont}        % check marks
+\usepackage{bbm}           % \mathbbm{1} incomp. w/ XeLaTeX
+%\usepackage[normalem]{ulem} % for \sout
+
+
+%% CONTENT FORMAT AND DESIGN (below for general formatting)
+%% --------------------------------------------------------
+\usepackage{lipsum}        % block of text (formatting test)
+%\usepackage{color}         % \color{...}, colored text
+%\usepackage{framed}        % boxed remarks
+%\usepackage{subcaption}    % subfigures; subfig depreciated
+%\usepackage{paralist}      % compactitem
+%\usepackage{appendix}      % subappendices
+%\usepackage{cite}          % group cites (conflict: collref)
+%\usepackage{tocloft}       % Table of Contents
+
+%% TABLES IN LaTeX
+%% ---------------
+%\usepackage{booktabs}      % professional tables
+%\usepackage{nicefrac}      % fractions in tables,
+%\usepackage{multirow}      % multirow elements in a table
+%\usepackage{arydshln} 	    % dashed lines in arrays
+
+%% Other Packages and Notes
+%% ------------------------
+%\usepackage[font=small]{caption} % caption font is small
+
+
+
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  PAGE FORMATTING and (RE)NEW COMMANDS  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[margin=2cm]{geometry}   % reasonable margins
+
+\graphicspath{{figures/}}	        % set directory for figures
+
+% for capitalized things
+\newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}
+
+\numberwithin{equation}{subsection}    % set equation numbering
+\renewcommand{\tilde}{\widetilde}   % tilde over characters
+\renewcommand{\vec}[1]{\mathbf{#1}} % vectors are boldface
+
+\newcommand{\dbar}{d\mkern-6mu\mathchar'26}    % for d/2pi
+\newcommand{\ket}[1]{\left|#1\right\rangle}    % <#1|
+\newcommand{\bra}[1]{\left\langle#1\right|}    % |#1>
+\newcommand{\Xmark}{\text{\sffamily X}}        % cross out
+
+
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+  \olditemize
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+
+
+% Commands for temporary comments
+\newcommand{\comment}[2]{\textcolor{red}{[\textbf{#1} #2]}}
+\newcommand{\flip}[1]{{\color{red} [\textbf{Flip}: {#1}]}}
+\newcommand{\email}[1]{\texttt{\href{mailto:#1}{#1}}}
+
+\newenvironment{institutions}[1][2em]{\begin{list}{}{\setlength\leftmargin{#1}\setlength\rightmargin{#1}}\item[]}{\end{list}}
+
+
+\usepackage{fancyhdr}		% to put preprint number
+
+
+
+%%%%%%%%%%%%%%%%%%%
+%%%  HYPERREF  %%%%
+%%%%%%%%%%%%%%%%%%%
+
+%% This package has to be at the end; can lead to conflicts
+\usepackage{microtype}
+\usepackage[
+	colorlinks=true,
+	citecolor=black,
+	linkcolor=black,
+	urlcolor=green!50!black,
+	hypertexnames=false]{hyperref}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  TITLE DATA  %%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\begin{center}
+
+    {\Large \textsc{Homework 2:}
+    \textbf{Tensor Stuff}}
+
+\end{center}
+
+\vskip .4cm
+
+\noindent
+\begin{tabular*}{\textwidth}{rl}
+	\textsc{Course:}& Physics 262, \emph{Group Theory for Physicists} (Fall 2019)
+	\\
+	\textsc{Instructor:}& Professor Flip Tanedo (\email{flip.tanedo@ucr.edu})
+	\\
+	\textsc{Due by:}& Be ready to discuss on Mon, Feb 22
+	% \\
+	% \textsc{Updated:}& Jan 24, 11:30am
+
+	%
+\end{tabular*}
+
+
+
+\subsection{Weight Diagram Example}
+
+Draw the SU(3) weight diagram for the SU(3) representation with highest weight $(3/2, \, \sqrt{3}/2)$. What is the dimension of this representation? It may be helpful to use the triangular graph paper available on the course website.
+
+
+\subsection{Tensor Representation}
+
+What is the decomposition of $\mathbf{3}\otimes\mathbf{3}\otimes\mathbf{3}$ into SU(3) irreducible representations? Is there a combination that is invariant?
+
+\subsection{Interpretation: SU(3) Color Symmetry}
+
+\subsubsection{The $\Delta^{++}$}
+
+The $\Delta^{++}$ is a composite fermion that is a cousin of the proton. One puzzle from the early days of modern particle physics was why the $\Delta^{++}$ existed. We suspected that the $\Delta^{++}$ was composed of three identical fermions, each with charge 2/3 (we now know this as the up quark). However, identical fermion wavefunctions must be antisymmetrized. Thus the $\Delta^{++}$ could not be made up of identical fermions. Explain why this was indirect motivation for SU(3) color symmetry for which the up quark is in the fundamental representation. \textsc{Hint}: your explanation should make use of a SU(3) invariant tensor.
+
+\subsubsection{Not SU(2)}
+
+Argue that in order to account for the $\Delta^{++}$, the new symmetry group could not have been SU(2). There are many ways to argue this, but for this problem, argue based on tensor representations of SU(2).
+
+\subsubsection{Not SU(4)}
+
+Argue that in order to account for the $\Delta^{++}$, the new symmetry group could not have been SU(4). There are many ways to argue this, but for this problem, argue based on invariant tensors.
+
+
+\subsubsection{``Technigluons''}
+
+Suppose I have a new theory based on SU($N$) symmetry. I have the following particles:
+\begin{enumerate}
+  \item A techni-quark in the fundamental representation.
+  \item A techni-tensor with $(N-1)$ fundamental (upper) indices.
+  \item A techni-gluon in the adjoint representation.
+\end{enumerate}
+Particles are allowed to interact if I can write down an invariant combination of their tensor product. Argue that the three particles above may interact with one another.
+
+\subsection{Adjoint vs. Fundamental--Anti-fundamental}
+
+We saw that the tensor product of a fundamental and an anti-fundamental of SU(2) decomposes as $$\mathbf{2}\otimes\bar{\mathbf{2}} = \mathbf{3}\oplus\mathbf{1}.$$
+One way to understand the $\mathbf{3}$ on the right-hand side is to see how it transforms as a spin-1 representation versus as a tensor product.
+
+\subsubsection{Tensor Product Transformation}
+
+Recall that SU($N$) indices transform as follows:
+\begin{align}
+  \psi^i &\to U^i_{\phantom{i}j} \psi ^j
+  &
+  \chi_i &\to  \chi_j (U^\dag)^j_{\phantom{j}i} \ ,
+\end{align}
+where $U$ is a finite SU($N$) transformation.
+
+\begin{enumerate}
+  \item Write the infinitesimal transformation of $\Psi^i_{\phantom{i}j}$ under an arbitrary, small SU(2) transformation.
+  \item Let $\vec{v} = (v^+, v^0, v^-)$ be a state in the $\mathbf{3}$ of the aforementioned tensor product. With respect to the fundamental and the antifundamental indices, $\mathbf{v}$ may be written
+  \begin{align}
+    \vec{v} = v^+ (T^+)^i_{\phantom{i}j} + v^0 (T^3)^i_{\phantom{i}j} + v^- (T^3)^i_{\phantom{i}j} \ .
+  \end{align}.
+  Write the components of $\vec{v}$ after performing an infinitesimal SU(2) transformation in the $T^1$ direction according to the transformation rule you wrote above.
+\end{enumerate}
+
+\subsubsection{Triplet Transformation}
+Alternatively, we may think of $\vec{v}$ as an object with only a triplet index:
+\begin{align}
+  \vec{v} = v^+ \ket{m=1} + v^0 \ket{m=0} + v^- \ket{m=-1} \ .
+\end{align}
+\begin{enumerate}
+  \item Write the infinitesimal transformation of $v^a$ under an arbitrary, small SU(2) transformation, where $a$ is a triplet (spin-1) index.
+  \item Write the components of $\vec{v}$ after performing an infinitesimal SU(2) transformation in the $T^1$ direction according to the transformation rule you wrote above.
+\end{enumerate}
+
+\textsc{Discussion}: In this way, the tensor $T$ is used to convert between different kinds of indices. Observe that the transformation on the components in $\vec{v}$ are the same whichever picture you use.
+
+
+
+% \section*{Extra Credit}
+%
+% These problems are for your own edification. You are encouraged to explore them according to your own personal and research interests.
+%
+%
+% \subsection*{BCH}
+%
+% Derive the Baker-Campbell-Hausdorff formula. Start by looking up what the Baker-Campbell-Hausdorff formula is. I don't have anything deep to say about this, but going through the derivation once gives you a feel for how to think of the group and algebra as a manifold and tangent space.
+
+
+\end{document}
