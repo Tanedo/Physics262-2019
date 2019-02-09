@@ -20,6 +20,7 @@ Graduate-level introduction to the representation of continuous (Lie) groups and
 ### Homework
 
 * [HW1](https://github.com/Tanedo/Physics262-2019/blob/master/P262_2019_HW1.pdf): Reps of SU(2) and SU(3). Updated 1/24.
+* [HW2](https://github.com/Tanedo/Physics262-2019/blob/master/P262_2019_HW2.pdf): Tensor stuff
 
 ### Lectures
 
