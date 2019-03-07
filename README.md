@@ -38,6 +38,11 @@ Graduate-level introduction to the representation of continuous (Lie) groups and
 * [Lec 11](https://github.com/Tanedo/Physics262-2019/blob/master/Lec11.pdf): HW1 review, roots for SO(4) and SO(5)
 * [Lec 12](https://github.com/Tanedo/Physics262-2019/blob/master/Lec12.pdf): Root systems
 * [Lec 13](https://github.com/Tanedo/Physics262-2019/blob/master/Lec13.pdf): Towards a general classification
+* [Lec 14](https://github.com/Tanedo/Physics262-2019/blob/master/Lec14.pdf): The Lorentz Group, I
+* [Lec 15](https://github.com/Tanedo/Physics262-2019/blob/master/Lec15.pdf): The Lorentz Group, II
+* [Lec 16](https://github.com/Tanedo/Physics262-2019/blob/master/Lec16.pdf): Induced Representations
+* [Lec 17](https://github.com/Tanedo/Physics262-2019/blob/master/Lec17.pdf): A hint of holography, spinors (omitted in the lecture), the Mobius strip. Useful reference: [Topology of Fibre bundles and Global Aspects of Gauge Theories (hep-th/0611201)](https://arxiv.org/abs/hep-th/0611201).
+* [Lec 18](https://github.com/Tanedo/Physics262-2019/blob/master/Lec18.pdf): What physicists should know about fiber bundles, how it shows up in electromagnetism. There are many good references for fiber bundles. I suggest [1607.03089](https://arxiv.org/abs/1607.03089) and any review articles on electrodynamics from a geometric picture. For more systematic treatments grounded in physics, *Mathematical Methods in Classical Mechanics* by Arnold is fantastic. Other introductions inclue Vol. II of Polchinski's string theory books or the text by Nakahara. *Mathematics for Physicists* by Stone and Goldbart is also a good introduction at this level. I've also heard good things about *Differential Geometry and Lie Groups for Physicists* by Fecko.
 
 
 ### Course References
