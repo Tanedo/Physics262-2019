@@ -44,7 +44,18 @@ Graduate-level introduction to the representation of continuous (Lie) groups and
 * [Lec 17](https://github.com/Tanedo/Physics262-2019/blob/master/Lec17.pdf): A hint of holography, spinors (omitted in the lecture), the Mobius strip. Useful reference: [Topology of Fibre bundles and Global Aspects of Gauge Theories (hep-th/0611201)](https://arxiv.org/abs/hep-th/0611201).
 * [Lec 18](https://github.com/Tanedo/Physics262-2019/blob/master/Lec18.pdf): What physicists should know about fiber bundles, how it shows up in electromagnetism. There are many good references for fiber bundles. I suggest [1607.03089](https://arxiv.org/abs/1607.03089) and any review articles on electrodynamics from a geometric picture. For more systematic treatments grounded in physics, *Mathematical Methods in Classical Mechanics* by Arnold is fantastic. Other introductions inclue Vol. II of Polchinski's string theory books or the text by Nakahara. *Mathematics for Physicists* by Stone and Goldbart is also a good introduction at this level. I've also heard good things about *Differential Geometry and Lie Groups for Physicists* by Fecko.
 * [Lec 19](https://github.com/Tanedo/Physics262-2019/blob/master/Lec19.pdf): Final lecture: the Lie derivative on manifolds (and why it's the same thing as the commutator of the Lie algebra). Hand-wavey comments towards directions where your work may touch on aspects of this construction. The lecture draws from *Geometrical methods of mathemtical physics* by Bernard Schutz. 
-* Lec 20: canceled due to an un-movable, last minute, required university-level meeting (I'm shaking my fist in the air as I type this). If we were to have had class, we may have talked about the solution to the [twin paradox in a closed universe](https://www.jstor.org/stable/2695267), the [gauge theory of falling cats](https://en.wikipedia.org/wiki/Falling_cat_problem), [parallel parking and holonomies](https://en.wikipedia.org/wiki/Parallel_parking_problem), [how to write Maxwell's equations succinctly](http://www.slac.stanford.edu/~mpeskin/Physics124/howto.pdf), [differential forms and vector analysis](https://aapt.scitation.org/doi/10.1119/1.13325). 
+* Lec 20: canceled due to an un-movable, last minute, required university-level meeting (I'm shaking my fist in the air as I type this). If we were to have had class, we may have talked about the solution to the [twin paradox in a closed universe](https://www.jstor.org/stable/2695267), the [gauge theory of falling cats](https://en.wikipedia.org/wiki/Falling_cat_problem), [parallel parking and holonomies](https://en.wikipedia.org/wiki/Parallel_parking_problem), [how to write Maxwell's equations succinctly](http://www.slac.stanford.edu/~mpeskin/Physics124/howto.pdf), [differential forms and vector analysis](https://aapt.scitation.org/doi/10.1119/1.13325). For those also taking GR, you may like [John Baez's tutorial on GR](http://math.ucr.edu/home/baez/gr/) which gives a physical motivation for the ideas of the last 3 lectures and the accompanying explainer on the [meaning of Einstein's equation](https://arxiv.org/abs/gr-qc/0103044). 
+
+
+### What we didn't get to
+
+There are a few topics that I regret that we did not cover. I list them here for future iterations of the course, but also so that students of this course know that these topics are "just within reach" of what they now already understand. 
+
+1. Squeezing out more representation theory. Casimir operators, using Dynkin diagrams, Young tableaux for SU(N).
+2. More on spinors: Weyl, Majorana, Dirac; the Clifford algebra; spinors in condensed matter.
+3. Spontaneous symmetry breaking (the handbook is [Slansky](https://www.sciencedirect.com/science/article/pii/0370157381900922)) and Goldstone Bosons (e.g. [Burgess review](https://arxiv.org/abs/hep-th/9808176))
+4. Conservation laws
+5. Anomalies
 
 ### Course References
 
