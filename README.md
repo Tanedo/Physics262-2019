@@ -55,7 +55,8 @@ There are a few topics that I regret that we did not cover. I list them here for
 2. More on spinors: Weyl, Majorana, Dirac; the Clifford algebra; spinors in condensed matter.
 3. Spontaneous symmetry breaking (the handbook is [Slansky](https://www.sciencedirect.com/science/article/pii/0370157381900922)) and Goldstone Bosons (e.g. [Burgess review](https://arxiv.org/abs/hep-th/9808176))
 4. Conservation laws
-5. Anomalies
+5. Topology and physics
+6. Anomalies
 
 ### Course References
 
