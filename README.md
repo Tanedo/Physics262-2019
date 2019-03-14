@@ -58,6 +58,8 @@ There are a few topics that I regret that we did not cover. I list them here for
 5. Topology and physics
 6. Anomalies
 
+A [sketch](https://github.com/Tanedo/Physics262-2019/blob/master/TwinParadox.pdf) of the solution to the twin paradox on a compact space.
+
 ### Course References
 
 For our goals, I am not aware of any single textbook that introduces the topic at a pace and level appropriate for our class. I suggest using a combination of the following references. The lectures are meant to be connective tissue that gives an overarching narrative for what we are doing and why.  
